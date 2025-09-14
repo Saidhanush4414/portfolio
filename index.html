@@ -140,15 +140,34 @@
 
   <!-- About -->
   <section id="about" class="mx-auto max-w-6xl px-4 py-16">
-    <h2 class="text-2xl sm:text-3xl font-bold">About Me</h2>
-    <p class="mt-4 max-w-3xl text-slate-300">Brief intro: I'm an AI & Data Science graduate specializing in <strong>NLP</strong> and <strong>predictive modeling</strong>. I enjoy turning messy data into useful products. Recently built a healthcare chatbot, churn prediction system, and a demand forecast app. Open to internships and full‑time roles.</p>
-    <ul class="mt-6 grid gap-3 sm:grid-cols-2">
-      <li class="rounded-xl border border-white/10 bg-white/5 p-4">🎯 Interests: NLP, MLOps, Recommenders</li>
-      <li class="rounded-xl border border-white/10 bg-white/5 p-4">🧰 Tools: Python, Flask, FastAPI, PyTorch, scikit‑learn</li>
-      <li class="rounded-xl border border-white/10 bg-white/5 p-4">☁️ Cloud: AWS (S3, Lambda), Render, Vercel</li>
-      <li class="rounded-xl border border-white/10 bg-white/5 p-4">📊 Data: Pandas, SQL, Airflow, dbt</li>
-    </ul>
-  </section>
+  <h2 class="text-2xl sm:text-3xl font-bold">About Me</h2>
+  <p class="mt-4 max-w-3xl text-slate-300">
+    I'm an AI & Data Science graduate specializing in 
+    <strong>NLP</strong> and <strong>predictive modeling</strong>. 
+    I enjoy turning messy data into useful products. Recently built a 
+    healthcare chatbot, churn prediction system, and a demand forecast app. 
+    Open to internships and full-time roles.
+  </p>
+
+  <ul class="mt-6 grid gap-3 sm:grid-cols-2">
+    <li class="rounded-xl border border-white/10 bg-white/5 p-4">🎯 Interests: NLP, MLOps, Recommenders</li>
+    <li class="rounded-xl border border-white/10 bg-white/5 p-4">🧰 Tools: Python, Flask, FastAPI, PyTorch, scikit-learn</li>
+    <li class="rounded-xl border border-white/10 bg-white/5 p-4">☁️ Cloud: AWS (S3, Lambda), Render, Vercel</li>
+    <li class="rounded-xl border border-white/10 bg-white/5 p-4">📊 Data: Pandas, SQL, Airflow, dbt</li>
+  </ul>
+
+  <h3 class="mt-10 text-xl font-semibold text-slate-200">💼 Roles I'm Seeking</h3>
+  <ul class="mt-4 grid gap-3 sm:grid-cols-2">
+    <li class="rounded-xl border border-white/10 bg-white/5 p-4">Data Analyst</li>
+    <li class="rounded-xl border border-white/10 bg-white/5 p-4">Machine Learning Engineer (Junior)</li>
+    <li class="rounded-xl border border-white/10 bg-white/5 p-4">AI Engineer (Junior)</li>
+    <li class="rounded-xl border border-white/10 bg-white/5 p-4">Software Developer (AI/ML exposure)</li>
+    <li class="rounded-xl border border-white/10 bg-white/5 p-4">Data Engineer (Junior)</li>
+    <li class="rounded-xl border border-white/10 bg-white/5 p-4">NLP Engineer (Junior)</li>
+    <li class="rounded-xl border border-white/10 bg-white/5 p-4">Deep Learning Engineer (Junior)</li>
+  </ul>
+</section>
+
 
   <!-- Skills -->
   <section id="skills" class="mx-auto max-w-6xl px-4 py-16">
@@ -290,7 +309,8 @@
   </section>
 
   <footer class="border-t border-white/10 py-8 text-center text-sm text-slate-400">
-    <p>© <span id="year"></span> Your Name — AI & DS Portfolio. Built with Tailwind.</p>
+    <p>© <span id="year"></span> Sai Dhanush — AI & DS Portfolio.</p>
+
   </footer>
 
   <!-- Icons -->
@@ -326,7 +346,6 @@
         themeIcon.textContent = '🌙';
       }
     }
-   
     themeToggle?.addEventListener('click', ()=>{
       const now = (localStorage.getItem('theme')||'dark')==='dark'?'light':'dark';
       localStorage.setItem('theme', now);
