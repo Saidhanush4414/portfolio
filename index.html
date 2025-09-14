@@ -309,6 +309,23 @@
   </script>
   <script>
     // Dark / light theme
+    const root = document.documentElement;
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    const stored = localStorage.getItem('theme');
+    if (stored === 'light') document.body.classList.add('bg-white','text-slate-900');
+
+    function applyTheme(mode){
+      if(mode==='light'){
+        document.body.classList.remove('bg-slate-950','text-slate-100');
+        document.body.classList.add('bg-white','text-slate-900');
+        themeIcon.textContent = '☀️';
+      } else {
+        document.body.classList.remove('bg-white','text-slate-900');
+        document.body.classList.add('bg-slate-950','text-slate-100');
+        themeIcon.textContent = '🌙';
+      }
+    }
    
     themeToggle?.addEventListener('click', ()=>{
       const now = (localStorage.getItem('theme')||'dark')==='dark'?'light':'dark';
