@@ -201,6 +201,8 @@
         <span class="tag">Git</span>
         <span class="tag">GitHub</span>
         <span class="tag">Jupyter Notebook</span>
+        <span class="tag">Cursor</span>
+        <span class="tag">Pycharm</span>
        
       </div>
     </div>
@@ -266,31 +268,28 @@
       <iframe src="resume.pdf" title="Resume" class="h-[70vh] w-full rounded-lg" loading="lazy"></iframe>
     </div>
   </section>
-
-  <!-- Contact -->
-  <section id="contact" class="mx-auto max-w-6xl px-4 py-16">
-    <h2 class="text-2xl sm:text-3xl font-bold">Contact</h2>
-    <div class="mt-6 grid gap-6 md:grid-cols-2">
-      <form class="rounded-2xl border border-white/10 bg-white/5 p-6" onsubmit="event.preventDefault(); alert('Thanks! Your message was not actually sent in this demo.');">
-        <div class="grid gap-4">
-          <label class="grid gap-2 text-sm">Name <input required class="input" placeholder="Your name"></label>
-          <label class="grid gap-2 text-sm">Email <input required type="email" class="input" placeholder="saidhanush4414@gmail.com"></label>
-          <label class="grid gap-2 text-sm">Message <textarea required class="input h-32" placeholder="How can I help?"></textarea></label>
-          <button class="btn w-fit">Send</button>
-        </div>
-        <p class="mt-3 text-xs text-slate-400">Tip: Replace this form with Netlify / Formspree / Google Forms for real submissions.</p>
-      </form>
-      <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-        <h3 class="font-semibold">Links</h3>
-        <ul class="mt-3 space-y-2 text-slate-300">
-          <li class="flex items-center gap-2"><i data-lucide="github" class="w-5 h-5"></i> <a class="hover:underline" href="https://github.com/saidhanush4414" target="_blank">github.com/saidhanush4414</a></li>
-          <li class="flex items-center gap-2"><i data-lucide="linkedin" class="w-5 h-5"></i> <a class="hover:underline" href="https://www.linkedin.com/in/saidhanush4414/" target="_blank">linkedin.com/in/saidhanush4414</a></li>
-          <li class="flex items-center gap-2"><i data-lucide="globe" class="w-5 h-5"></i> <a class="hover:underline" href="https://saidhanush4414.github.io/" target="_blank">saidhanush4414.github.io</a></li>
-          <li class="flex items-center gap-2"><i data-lucide="mail" class="w-5 h-5"></i> <button class="hover:underline" onclick="navigator.clipboard.writeText('you@example.com'); this.textContent='Email copied!'; setTimeout(()=>this.textContent='you@example.com',2000);">you@example.com</button></li>
-        </ul>
-      </div>
+<!-- Contact -->
+<section id="contact" class="mx-auto max-w-6xl px-4 py-16">
+  <h2 class="text-2xl sm:text-3xl font-bold">Contact</h2>
+  <p class="mt-2 text-slate-300">Feel free to reach out via email or connect on LinkedIn / GitHub.</p>
+  <div class="mt-6 flex flex-col sm:flex-row gap-6">
+    <div class="rounded-2xl border border-white/10 bg-white/5 p-6 flex-1">
+      <h3 class="font-semibold">Email</h3>
+      <p class="text-slate-300 mt-2">
+        <a href="mailto:saidhanush4414@gmail.com" class="hover:underline">saidhanush4414@gmail.com</a>
+      </p>
     </div>
-  </section>
+    <div class="rounded-2xl border border-white/10 bg-white/5 p-6 flex-1">
+      <h3 class="font-semibold">Profiles</h3>
+      <ul class="mt-2 space-y-2 text-slate-300">
+        <li><a href="https://github.com/saidhanush4414" target="_blank" class="hover:underline">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/saidhanush4414/" target="_blank" class="hover:underline">LinkedIn</a></li>
+        <li><a href="https://saidhanush4414.github.io/" target="_blank" class="hover:underline">Portfolio</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 
   <footer class="border-t border-white/10 py-8 text-center text-sm text-slate-400">
     <p>© <span id="year"></span> Sai Dhanush — AI & DS Portfolio.</p>
@@ -359,13 +358,6 @@
     window.lucide && window.lucide.createIcons();
   </script>
 
-  <!-- =========================
-       HOW TO CUSTOMIZE (quick)
-       1) Replace "Your Name", links, and email.
-       2) Put resume.pdf next to this index.html.
-       3) Update Projects with real Live Demo + GitHub links.
-       4) Push to GitHub repo and enable Pages (root / main).
-       5) Optional: add custom domain in Pages settings.
-      ========================= -->
+
 </body>
 </html>
